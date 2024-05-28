@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widtho=divice-width, initial-scale=1.0">
+         <link rel="stylesheet" href="./style.css">   
+        <title>Galeria de fotos</title>
+    </head>
+    <body>
+            <div class="banner">
+                <h1>Bienvenido a nuestra galería de fotos</h1>
+                <p>Disfruta de una selección de fotos de la segunda categoria de las olimpiadas deportivas</p>
+            </div>
+        <section class="gallery_content">
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6736.jpg" alt="imagen 1">
+            <figcaption> imagen 1</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6737.jpg" alt="imagen 1">
+            <figcaption> imagen 2</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6948.jpg" alt="imagen 1">
+            <figcaption> imagen 3</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6955.jpg" alt="imagen 1">
+            <figcaption> imagen 4</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6956.jpg" alt="imagen 1">
+            <figcaption> imagen 5</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6957.jpg" alt="imagen 1">
+            <figcaption> imagen 6</figcaption>
+           </figure> 
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6958.jpg" alt="imagen 1">
+            <figcaption> imagen 7</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6959.jpg" alt="imagen 1">
+            <figcaption> imagen 8</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_6967.jpg" alt="imagen 1">
+            <figcaption> imagen 9</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_7746.jpg" alt="imagen 1">
+            <figcaption> imagen 10</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_7763.jpg" alt="imagen 1">
+            <figcaption> imagen 11</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_7770.jpg" alt="imagen 1">
+            <figcaption> imagen 12</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 2/IMG_7771.jpg" alt="imagen 1">
+            <figcaption> imagen 13</figcaption>
+           </figure>
+           <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modalImg" class="modal-content">
+          </div>
+          
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const galleryImages = document.querySelectorAll('.gallery_item img');
+              const modal = document.getElementById('modal');
+              const modalImg = document.getElementById('modalImg');
+          
+              galleryImages.forEach(function(image) {
+                image.addEventListener('click', function() {
+                  modal.style.display = 'block';
+                  modalImg.src = this.src;
+                });
+              });
+          
+              const closeModal = document.querySelector('.close');
+              closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+              });
+            });
+          </script>
+          
+    </body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widtho=divice-width, initial-scale=1.0">
+         <link rel="stylesheet" href="./style.css">   
+        <title>Galeria de fotos</title>
+    </head>
+    <body>
+            <div class="banner">
+                <h1>Bienvenido a nuestra galería de fotos</h1>
+                <p>Disfruta de una selección de fotos de la quinta categoria de las olimpiadas deportivas</p>
+            </div>
+        <section class="gallery_content">
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6843.jpg" alt="imagen 1">
+            <figcaption> imagen 1</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6849.jpg" alt="imagen 1">
+            <figcaption> imagen 2</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6850.jpg" alt="imagen 1">
+            <figcaption> imagen 3</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6853.jpg" alt="imagen 1">
+            <figcaption> imagen 4</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6855.jpg" alt="imagen 1">
+            <figcaption> imagen 5</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6857.jpg" alt="imagen 1">
+            <figcaption> imagen 6</figcaption>
+           </figure> 
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6858.jpg" alt="imagen 1">
+            <figcaption> imagen 7</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6860.jpg" alt="imagen 1">
+            <figcaption> imagen 8</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6863.jpg" alt="imagen 1">
+            <figcaption> imagen 9</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6866.jpg" alt="imagen 1">
+            <figcaption> imagen 10</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6870.jpg" alt="imagen 1">
+            <figcaption> imagen 11</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6872.jpg" alt="imagen 1">
+            <figcaption> imagen 12</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6874.jpg" alt="imagen 1">
+            <figcaption> imagen 13</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6875.jpg" alt="imagen 1">
+            <figcaption> imagen 14</figcaption>
+           </figure>  
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6877.jpg" alt="imagen 1">
+            <figcaption> imagen 15</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_6994.JPG" alt="imagen 1">
+            <figcaption> imagen 16</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_7678.JPG" alt="imagen 1">
+            <figcaption> imagen 17</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_7749.jpg" alt="imagen 1">
+            <figcaption> imagen 18</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/categoria 5/IMG_7758.jpg" alt="imagen 1">
+            <figcaption> imagen 19</figcaption>
+           </figure> 
+           <figure class="gallery_item">
+            <img src="./imageness/categoria 5/venus.jpg" alt="imagen 1">
+            <figcaption> imagen 20</figcaption>
+           </figure> 
+           <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modalImg" class="modal-content">
+          </div>
+          
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const galleryImages = document.querySelectorAll('.gallery_item img');
+              const modal = document.getElementById('modal');
+              const modalImg = document.getElementById('modalImg');
+          
+              galleryImages.forEach(function(image) {
+                image.addEventListener('click', function() {
+                  modal.style.display = 'block';
+                  modalImg.src = this.src;
+                });
+              });
+          
+              const closeModal = document.querySelector('.close');
+              closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+              });
+            });
+          </script>
+          
+    </body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widtho=divice-width, initial-scale=1.0">
+        <link rel="icono de acceso directo" href="./images/favicon.png" type="image/x-icon">
+         <link rel="stylesheet" href="./style.css">   
+        <title>Galeria de fotos</title>
+    </head>
+    <body>
+            <div class="banner">
+                <h1>Bienvenido a nuestra galería de fotos</h1>
+                <p>Disfruta de una selección de fotos de las olimpiadas de las artes</p>
+            </div>
+        <section class="gallery_content">
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7344.jpg" alt="imagen 1">
+            <figcaption> imagen 1</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7347.jpg" alt="imagen 1">
+            <figcaption> imagen 2</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7357.jpg" alt="imagen 1">
+            <figcaption> imagen 3</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7362.jpg" alt="imagen 1">
+            <figcaption> imagen 4</figcaption>
+           </figure>
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7375.jpg" alt="imagen 1">
+            <figcaption> imagen 5</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7376.jpg" alt="imagen 1">
+            <figcaption> imagen 6</figcaption>
+           </figure> 
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7381.jpg" alt="imagen 1">
+            <figcaption> imagen 7</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7385.jpg" alt="imagen 1">
+            <figcaption> imagen 8</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7387.jpg" alt="imagen 1">
+            <figcaption> imagen 9</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7397.jpg" alt="imagen 1">
+            <figcaption> imagen 10</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7400.jpg" alt="imagen 1">
+            <figcaption> imagen 11</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7410.jpg" alt="imagen 1">
+            <figcaption> imagen 12</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7419.jpg" alt="imagen 1">
+            <figcaption> imagen 13</figcaption>
+           </figure>  <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7424.jpg" alt="imagen 1">
+            <figcaption> imagen 14</figcaption>
+           </figure>  
+           <figure class="gallery_item">
+            <img src="./imageness/artes/IMG_7427.jpg" alt="imagen 1">
+            <figcaption> imagen 15</figcaption>
+           </figure>  
+           <div id="modal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modalImg" class="modal-content">
+          </div>
+          
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const galleryImages = document.querySelectorAll('.gallery_item img');
+              const modal = document.getElementById('modal');
+              const modalImg = document.getElementById('modalImg');
+          
+              galleryImages.forEach(function(image) {
+                image.addEventListener('click', function() {
+                  modal.style.display = 'block';
+                  modalImg.src = this.src;
+                });
+              });
+          
+              const closeModal = document.querySelector('.close');
+              closeModal.addEventListener('click', function() {
+                modal.style.display = 'none';
+              });
+            });
+          </script>
+          
+    </body>
+
+</html>

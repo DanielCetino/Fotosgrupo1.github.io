@@ -1,0 +1,22 @@
+*{
+    
+body{
+    background-color: lightblue;
+}
+}
+
+@media (min-width: 768px){
+    .gallery_content{
+        column-count: 2;
+    }
+
+}@media (min-width: 1024px){
+    .gallery_content{
+        column-count: 4;
+    }
+}
+.modal video {
+    max-width: 100%;
+    height: auto;
+  }
+  
